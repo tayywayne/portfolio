@@ -1,0 +1,127 @@
+@font-face {
+  font-family: night;
+  src: url(TheNightWatch.ttf);
+}
+
+
+body {
+  background: rgba(0,0,0,1) 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+}
+/* .content {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+} */
+
+.bg1 {
+  background: rgb(128,15,15);
+  background: linear-gradient(90deg, rgba(128,15,15,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.bg2 {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,15,15,1) 100%);
+}
+
+.nav {
+  transform: top left;
+  position: sticky;
+  top: 80px;
+  left: 50px;
+  /* color: black; */
+  z-index: 1;
+  /* mix-blend-mode: multiply; */
+}
+.nav a {
+  color: white;
+  opacity: 20%;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 0 10px;
+  display: block;
+  font-family: night;
+}
+
+
+
+.block1 {
+  margin: auto;
+  transform: skewY(3deg);
+  height: 900px;
+}
+
+.block1-inner{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 5%;
+  /* min-height: 100%; */
+}
+
+.block1-inner div {
+  flex: 1 1 0;
+  height: 100%;
+}
+
+.b11 {
+  transform: skewY(-3deg);
+  min-height: 50vh;
+  overflow: visible;
+}
+
+.b11 h1 {
+  color: #fff;
+  font-family: night;
+  font-size: 180px;
+  position: absolute;
+  top: -80px;
+  right: 220px;
+  text-align: right;
+}
+
+.b11 h2 {
+  color: #fff;
+  font-family: night;
+  font-size: 50px;
+  position: absolute;
+  /* padding-left: 70px; */
+  top: 350px;
+  right: 50px;
+  min-width: 100%;
+  /* text-align: right; */
+}
+
+
+.block2 {
+  margin: auto;
+  transform: skewY(3deg);
+  min-height: 900px;
+  /* clip-path: polygon(0 1rem, 100% 0, 100% 100%, 0 calc(100% - 1rem)); */
+}
+
+.div1 {
+  background-color: white;
+  width: 105%;
+  min-height: 50px;
+  transform: rotate(3deg);
+  margin-bottom: -3px;
+  margin-left: -3px;
+}
+
+.div2 {
+  background-color: white;
+  width: 105%;
+  min-height: 50px;
+  transform: rotate(-3deg);
+  margin-bottom: -3px;
+  margin-left: -3px;
+}
+
+.block2-inner {
+  flex: 1 1 0;
+  height: 100%;
+}
