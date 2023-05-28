@@ -133,7 +133,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: skewY(-3deg);
-  gap: 20px;
+  gap: 30px;
   padding: 10%;
 }
 
@@ -142,9 +142,13 @@ body {
   background-color: #fff;
   height: 100%;
   padding-bottom: 20px;
+  box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
 }
 
 .project img {
+  max-width: 300px;
   width: 100%;
 }
 
@@ -199,5 +203,15 @@ body {
   margin: 0px;
   transform: skewY(3deg);
   min-height: 1000px;
+}
 
+.reveal{
+  /* position: relative; */
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
