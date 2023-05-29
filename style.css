@@ -1,6 +1,6 @@
 @font-face {
   font-family: night;
-  src: url(TheNightWatch.ttf);
+  src: url(br.otf);
 }
 
 @font-face {
@@ -46,16 +46,19 @@ span {
     border: 0px none #ffffff;
   }
 
-
-  .reveal{
-    /* position: relative; */
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1.5s all ease;
+  @keyframes reveal {
+    0% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
+
+  .reveal-text {
+    animation: 1s ease-out 0s 1 reveal;
   }
 
 
@@ -81,6 +84,7 @@ span {
 	display:block;
 	list-style:none;
 	z-index:3;
+  text-transform: uppercase;
 }
 
 .content1{
@@ -99,9 +103,9 @@ span {
   margin-bottom: -30px;
 	color: #F9F9F9;
 	color: rgba(255,255,255,0.9);
-	/* text-shadow: 0px 1px 1px rgba(0,0,0,0.3); */
   letter-spacing: .3rem;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .content1 h2 {
@@ -109,6 +113,7 @@ span {
   font-family: night, sans-serif;
   letter-spacing: .3rem;
   text-align: right;
+  font-weight: 400;
 }
 .content1 p{
 	font-size: 14px;
@@ -174,10 +179,10 @@ span {
 .one { width: 6.866%; }
 .button-1{
   font-family: night, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   display: inline-block;
-  padding: 10px 10px;
-  margin: 10px 0;
+  padding: 5px 5px;
+  margin: 5px 0;
   position: relative;
   color: #F9F9F9;
   letter-spacing: .3rem;
@@ -228,11 +233,12 @@ span {
   font-family: night, sans-serif;
 	padding: 0px 0px 0px 0px;
 	margin-top: 52px;
-  margin-bottom: -30px;
+  margin-bottom: -50px;
 	color: #F9F9F9;
-	color: rgba(255,255,255,0.9);
   letter-spacing: .3rem;
   text-align: right;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .content h2 {
@@ -241,11 +247,13 @@ span {
   letter-spacing: .3rem;
   margin-bottom: -10px;
   text-align: right;
+  font-weight: 400;
 }
 .content p{
 	font-size: 14px;
 	color: #F9F9F9;
   margin-bottom: 55px;
+  line-height: 150%;
 }
 
 .projetc-link {
@@ -270,6 +278,7 @@ span {
   color: #F9F9F9;
   transition: all 0.3s ease-in-out;
   border-bottom:1px solid #9D8F8F;
+  padding-top: 5px;
 }
 
 .learn-more:hover {
@@ -285,7 +294,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
-  /* margin: 0px 50px; */
+  margin-bottom: 70px;
 }
 
 .about1 {
@@ -313,5 +322,9 @@ span {
 
 .about1 h2 {
   text-align: left;
+}
 
+.about1 p {
+  text-align: left;
+  line-height: 150%;
 }
