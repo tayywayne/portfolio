@@ -1,0 +1,294 @@
+@font-face {
+  font-family: night;
+  src: url(TheNightWatch.ttf);
+}
+
+@font-face {
+  font-family: dark;
+  src: url(dark.ttf);
+}
+
+@font-face {
+  font-family: goth;
+  src: url(goth.ttf);
+}
+
+
+body {
+  background: rgba(0,0,0,1) 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+}
+/* .content {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+} */
+
+.bg1 {
+  background: rgb(128,15,15);
+  background: linear-gradient(90deg, rgba(128,15,15,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.bg2 {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,15,15,1) 100%);
+}
+
+.nav {
+  transform: top left;
+  position: sticky;
+  top: 10px;
+  left: 50px;
+  /* color: black; */
+  z-index: 1;
+  /* mix-blend-mode: multiply; */
+}
+.nav a {
+  color: white;
+  opacity: 20%;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  font-family: night;
+  transition: all 0.5s ease;
+}
+
+.nav a:hover {
+  opacity: 600%;
+}
+
+
+
+.block1 {
+  margin: auto;
+  transform: skewY(3deg);
+  height: 900px;
+  border-bottom: solid 50px white;
+}
+
+.block1-inner{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 5% 10%;
+  /* min-height: 100%; */
+}
+
+.block1-inner div {
+  flex: 1 1 0;
+  height: 100%;
+}
+
+.b11 {
+  transform: skewY(-3deg);
+  min-height: 50vh;
+  overflow: visible;
+  max-width: 50vh;;
+}
+
+.b11 h1 {
+  color: #fff;
+  font-family: night;
+  font-size: 180px;
+  position: absolute;
+  top: -80px;
+  right: 180px;
+  text-align: right;
+}
+
+.b11 h2 {
+  color: #fff;
+  font-family: night;
+  font-size: 50px;
+  position: absolute;
+  /* padding-left: 70px; */
+  top: 350px;
+  right: 180px;
+  min-width: 100%;
+  text-align: right;
+}
+
+.block1-inner h3 {
+  transform: skewY(-3deg);
+  color: #fff;
+  font-family: night;
+  max-width: 200px;
+  font-size: 25px;
+  position: absolute;
+  top: 450px;
+  left: 200px;
+
+}
+
+
+.block2 {
+  margin: 0px;
+  transform: skewY(3deg);
+  min-height: 1000px;
+  border-bottom: solid 50px white;
+  /* clip-path: polygon(0 0, 100% 7%, 100% 93%, 0% 100%); */
+}
+
+.div1 {
+  background-color: white;
+  width: 105%;
+  min-height: 50px;
+  transform: rotate(-0.5deg);
+  /* margin-bottom: -3px; */
+  /* margin-left: -3px; */
+  z-index: 1;position: absolute;
+  bottom: -35px;
+}
+
+.div2 {
+  background-color: white;
+  width: 105%;
+  min-height: 50px;
+  transform: rotate(0.5deg);
+  /* margin-bottom: -3px; */
+  /* margin-left: -3px; */
+  z-index: 1;position: absolute;
+  bottom: -35px;
+}
+
+.block2-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(-3deg);
+  gap: 30px;
+  padding: 10%;
+}
+
+.project {
+  flex: 1 1 0;
+  background-color: #fff;
+  height: 100%;
+  padding-bottom: 20px;
+  box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
+  -webkit-box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 14px 16px 0px -6px rgba(0,0,0,1);
+}
+
+.project img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.project h2 {
+  padding-left: 5px;
+  font-family: night;
+}
+
+.project p {
+  padding-left: 5px;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.projects {
+  flex: 1 1 100%;
+  /* margin-bottom: 3%; */
+  text-align: left;
+  justify-content: center;
+}
+
+.projects h1 {
+  color: #fff;
+  font-family: night;
+  font-size: 50px;
+}
+
+
+
+
+
+
+.block3 {
+  margin: 0px;
+  transform: skewY(3deg);
+  min-height: 1000px;
+  border-bottom: solid 50px white;
+}
+
+.block4 {
+  margin: 0px;
+  transform: skewY(3deg);
+  min-height: 1000px;
+  border-bottom: solid 50px white;
+}
+
+.block5 {
+  margin: 0px;
+  transform: skewY(3deg);
+  min-height: 1000px;
+}
+
+.reveal{
+  /* position: relative; */
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects button {
+  /* align-self: right; */
+}
+
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.right {
+  text-align: right;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #000;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
