@@ -14,7 +14,7 @@ html, body {
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Orbitron');
 body {
 	width: 100%;
-	background: #393030;
+	background: #2B2725;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -28,7 +28,7 @@ span {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #bcbab8 #9d8f8f;
+    scrollbar-color: #7D6F6A #4D4441;
   }
 
   /* Chrome, Edge, and Safari */
@@ -37,11 +37,11 @@ span {
   }
 
   *::-webkit-scrollbar-track {
-    background: #9d8f8f;
+    background: #4D4441;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #bcbab8;
+    background-color: #665B57;
     border-radius: 0px;
     border: 0px none #ffffff;
   }
@@ -126,7 +126,7 @@ span {
 	width: 98%;
 	min-height: 100%;
 	position: absolute;
-	background-color: #9D8F8F;
+	background-color: #2B2725;
 	/* box-shadow: 4px -4px 4px rgba(0,0,0,0.2); */
 	margin-left: -102%;
 	z-index:2;
@@ -138,7 +138,7 @@ span {
 }
 .panel:target{
 	margin-left: 0%;
-	background-color: #393030;
+	background-color: #2B2725;
 }
 #home:target ~ #header #navigation #link-home,
 #portfolio:target ~ #header #navigation #link-portfolio,
@@ -327,4 +327,19 @@ span {
 .about1 p {
   text-align: left;
   line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: #F9F9F9;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #BCBAB8;
+}
+
+h3 {
+  color: #F9F9F9;
+  font-family: night, sans-serif;
 }
