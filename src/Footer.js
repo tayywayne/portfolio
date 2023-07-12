@@ -9,14 +9,14 @@ function Footer() {
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
 
-      <a className="ml-3 text-gray-500" href='https://www.linkedin.com/in/taywayne/' target="_blank">
-        <img src='https://i.imgur.com/VNrOu6G.png' />
+      <a className="ml-3 text-gray-500" href='https://www.linkedin.com/in/taywayne/' rel="noreferrer noopener" target="_blank">
+        <img src='https://i.imgur.com/VNrOu6G.png' alt='linked in'/>
       </a>
-      <a className="ml-3 text-gray-500" href='https://github.com/tayywayne' target="_blank">
-        <img src='https://i.imgur.com/0VPtpIa.png' />
+      <a className="ml-3 text-gray-500" href='https://github.com/tayywayne' rel="noreferrer noopener" target="_blank">
+        <img src='https://i.imgur.com/0VPtpIa.png' alt='github' />
       </a>
-      <a className="ml-3 text-gray-500" href='https://gitlab.com/taywayne' target="_blank">
-        <img src='https://i.imgur.com/mLP1dIW.png' />
+      <a className="ml-3 text-gray-500" href='https://gitlab.com/taywayne' rel="noreferrer noopener" target="_blank">
+        <img src='https://i.imgur.com/mLP1dIW.png' alt='gitlab' />
       </a>
     </span>
   </div>

@@ -10,7 +10,7 @@ function Header() {
       <a className="mr-5" href='/'>Home</a>
       <a className="mr-5" href='/projects'>Projects</a>
       <a className="mr-5" href='/about'>About</a>
-      <a className="mr-5">Contact</a>
+      <a className="mr-5" href='/contact'>Contact</a>
     </nav>
 
   </div>

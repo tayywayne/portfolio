@@ -34,18 +34,18 @@ function About() {
 
 
 
-        <section class="text-gray-600 body-font about2">
-    <div class="container px-5 py-24 mx-auto flex flex-col">
-        <div class="lg:w-4/6 mx-auto">
-        <div class="flex flex-col sm:flex-row mt-10">
-            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <img src='https://i.imgur.com/Gumir24.jpg' className='project-img'/>
-            <div class="flex flex-col items-center text-center justify-center">
-                <div class="w-12 h-1 blue-div mt-2 mb-4"></div>
+        <section className="text-gray-600 body-font about2">
+    <div className="container px-5 py-24 mx-auto flex flex-col">
+        <div className="lg:w-4/6 mx-auto">
+        <div className="flex flex-col sm:flex-row mt-10">
+            <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <img src='https://i.imgur.com/Gumir24.jpg' className='project-img' alt='insdide of building'/>
+            <div className="flex flex-col items-center text-center justify-center">
+                <div className="w-12 h-1 blue-div mt-2 mb-4"></div>
             </div>
             </div>
-            <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-stone-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p class="leading-relaxed text-lg mb-4">In my personal life, I thrive on unleashing my creativity through various outlets such as photography, painting, and any form of artistic expression. Additionally, I find immense joy in engaging in outdoor activities like cycling, kayaking, and exploring the wonders of nature. <br /><br />
+            <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-stone-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p className="leading-relaxed text-lg mb-4">In my personal life, I thrive on unleashing my creativity through various outlets such as photography, painting, and any form of artistic expression. Additionally, I find immense joy in engaging in outdoor activities like cycling, kayaking, and exploring the wonders of nature. <br /><br />
 
             These passions enrich my life and provide a balance to my work as a software engineer, allowing me to recharge and find inspiration from the world around me.</p>
             </div>
@@ -57,16 +57,16 @@ function About() {
 
 
 
-    <section class="body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+    <section className="body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
         <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
       </svg>
-      <p class="leading-relaxed text-lg">I would like to be remembered as someone who was not afraid to do what she wanted to do, and as someone who took risks along the way in order to achieve her goals.</p>
-      <span class="inline-block h-1 w-10 blue-div mt-8 mb-6"></span>
-      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">SALLY RIDE</h2>
-      <p class="text-gray-500">Physicist, NASA Communicator and Astronaut</p>
+      <p className="leading-relaxed text-lg">I would like to be remembered as someone who was not afraid to do what she wanted to do, and as someone who took risks along the way in order to achieve her goals.</p>
+      <span className="inline-block h-1 w-10 blue-div mt-8 mb-6"></span>
+      <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">SALLY RIDE</h2>
+      <p className="text-gray-500">Physicist, NASA Communicator and Astronaut</p>
     </div>
   </div>
 </section>
